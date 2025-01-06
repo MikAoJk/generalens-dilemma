@@ -1,6 +1,7 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
+    id("application")
     kotlin("jvm") version "2.1.0"
 }
 
@@ -9,6 +10,10 @@ version = "0.0.1"
 
 repositories {
     mavenCentral()
+}
+
+application {
+    mainClass.set("io.github.mikaojk.MainKt")
 }
 
 
