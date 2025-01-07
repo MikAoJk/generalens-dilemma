@@ -9,16 +9,16 @@ fun main() {
     val playerTwo = Player(name = "Joakim", soilders = 100, wins = 0)
 
     for (i in 0 until battlefields) {
-        println("Round number: $i")
+        println("Round number: ${i+1}")
 
         val playerOneSoildersSendToBattlefield = decideSoldiersToSendToBattel(playerOne.soilders)
         val playerTwoSoildersSendToBattlefield = decideSoldiersToSendToBattel(playerTwo.soilders)
 
         if (playerOneSoildersSendToBattlefield > playerTwoSoildersSendToBattlefield) {
-            println("${playerOne.name} winner")
+            println("${playerOne.name} wins")
             playerOne.wins++
         } else if (playerTwoSoildersSendToBattlefield > playerOneSoildersSendToBattlefield) {
-            println("${playerTwo.name} winner")
+            println("${playerTwo.name} wins")
             playerTwo.wins++
         } else {
             println("Draw")
@@ -54,6 +54,8 @@ fun printGameResult(playerOne: Player, playerTwo: Player) {
     println("Game is ended")
     if (winner == null) {
         println("The game ended in a draw")
+        println("PlayerOne is:  ${playerOne.name} with number of wins: ${playerOne.wins}")
+        println("PlayerTwo is:  ${playerTwo.name} with number of wins: ${playerTwo.wins}")
     } else {
         val loser = getLoser(playerOne, playerTwo)
         println("Winner is:  ${winner.name} with number of wins: ${winner.wins}")
