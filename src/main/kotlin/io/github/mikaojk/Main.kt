@@ -11,6 +11,3 @@ fun main() {
 
     playGame(playerOne, playerTwo, battlefields)
 }
-
-
-
