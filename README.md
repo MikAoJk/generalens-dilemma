@@ -1,5 +1,5 @@
 # generalens-dilemma
-
+Simple implementation of "generalens dilemma" in kotlin
 
 ## Technologies used
 * JDK 21
@@ -29,7 +29,7 @@ Go to src/main/kotlin/io/github/mikaojk/Main.kt and run the main method
 
 ### Upgrading the gradle wrapper
 Find the newest version of gradle here: https://gradle.org/releases/ Then run this command:
-(Remeber to repealce $gradleVersjon with newest version)
+(Remeber to repealce $gradleVersjon with the newest version)
 ```shell script
 ./gradlew wrapper --gradle-version $gradleVersjon
 ```

@@ -1,11 +1,11 @@
 group = "io.github.mikaojk"
 version = "0.0.1"
 
-val junitJupiterVersion = "5.11.4"
+val junitJupiterVersion = "5.12.1"
 
 plugins {
+    kotlin("jvm") version "2.1.20"
     id("application")
-    kotlin("jvm") version "2.1.0"
 }
 
 repositories {
@@ -37,10 +37,6 @@ tasks {
             showStackTraces = true
             exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
         }
-    }
-
-    withType<Wrapper> {
-        gradleVersion = "8.12"
     }
 
 }
