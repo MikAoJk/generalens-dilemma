@@ -1,9 +1,10 @@
 name: Update Gradle Wrapper
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-
+  push:
+    branches:
+      - main
+      
 jobs:
   update-gradle-wrapper:
     runs-on: ubuntu-latest
