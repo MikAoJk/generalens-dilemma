@@ -8,12 +8,16 @@ plugins {
     id("application")
 }
 
-repositories {
-    mavenCentral()
-}
-
 application {
     mainClass.set("io.github.mikaojk.MainKt")
+}
+
+kotlin {
+    jvmToolchain(25)
+}
+
+repositories {
+    mavenCentral()
 }
 
 
